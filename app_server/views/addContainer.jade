@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .container-fluid.pt-4.px-4
+        .bg-light.text-center.rounded.p-4
+            .d-flex.align-items-center.mb-4
+                form(action="/api/containers/" method="post")
+                    label(for="container_name") Name
+                    input(type="text" id="container_name" name="container_name")
+                    label(for="container_descriptor") Description
+                    input(type="text" id="container_descriptor" name="container_descriptor")
+                    button.btn.btn-sm.btn-primary(type="submit") Add Container
+

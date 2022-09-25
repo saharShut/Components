@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    .container-fluid.pt-4.px-4
+        .bg-light.text-center.rounded.p-4
+            .d-flex.align-items-center.mb-4
+                form(action="#{ actionUri }" method="post")
+                    label(for="element_name") Name
+                    input(type="text" id="element_name" name="element_name" value="#{ element.name }") 
+                    label(for="element_description") Description
+                    input(type="text" id="element_description" name="element_description" value="#{ element.description }") 
+                    label(for="element_amount") Amount
+                    input(type="text" id="element_amount" name="element_amount" value="#{ element.amount }") 
+                    a.btn.btn-sm.btn-primary(href="/elements/deleteElement/#{elementid}") Delete Element
+                    button.btn.btn-sm.btn-primary(type="submit") Update Element

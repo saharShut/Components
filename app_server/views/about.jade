@@ -6,14 +6,13 @@ block content
             .col-sm-12.col-xl-12
                 .bg-light.rounded.h-100.p-4
                       h6.mb-4 About us
-                      p This project was made for managed electrical elements.
+                      p= description
                       .col-sm-12.col-xl-12
             .col-sm-12.col-xl-12
                 .bg-light.rounded.h-100.p-4
                       h6.mb-4 Members
                       dl.row.mb-0
-                        dt.col-sm-4 16.08.2022
-                        dd.col-sm-8 Добавление node postgress пакета. 
-                            a(href="https://node-postgres.com/features/connecting") https://node-postgres.com/features/connecting
-                        dt.col-sm-4 16.08.2022
-                        dd.col-sm-8 Подключение к проекту MongoDB.
+                        each item in members
+                            dt.col-sm-4= item.date
+                            dd.col-sm-8= item.note 
+                        

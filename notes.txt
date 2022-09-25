@@ -1,0 +1,24 @@
+
+get запросы страницы
+
+ action                         | method | path                             | parametr      | example
+--------------------------------|--------|----------------------------------|---------------|-------------
+ главная страница               | GET    | /                                |               | http://loc8r/
+ форма добавления элемента      | GET    | /containers/containerid/elements | containerid   | http://loc8r/containers/123/elements
+ форма добавления контэйнера    | GET    | /containers                      |               | http://loc8r/containers/
+
+
+api запросы
+
+
+ action                         | method | path                             | parametr      | example
+--------------------------------|--------|----------------------------------|---------------|--------------
+чтение списка контейнеров       | GET    | /containers                      |               | http://loc8r/api/containers
+создание нового контейнера      | POST   | /containers                      |               | http://loc8r/api/containers
+чтение конкретного контейнера   | GET    | /containers                      | containerid   | http://loc8r/api/containers/123
+удаление конкретного контейнера | DELETE | /containers                      | containerid   | http://loc8r/api/containers/123
+--------------------------------|--------|----------------------------------|---------------|--------------
+чтение списка элементов         | GET    | /containers/containerid/elements |               | http://loc8r/api/containers/123/elements
+создание нового элемнта         | POST   | /containers/containerid/elements |               | http://loc8r/api/containers/123/elements
+обновление конкретного элемента | PUT    | /containers/containerid/elements | elementid     | http://loc8r/api/containers/123/elements/123
+удаление конкретного элемента   | DELETE | /elements                        | elementid     | http://loc8r/api/elements/123
