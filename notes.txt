@@ -20,5 +20,5 @@ api запросы
 --------------------------------|--------|----------------------------------|---------------|--------------
 чтение списка элементов         | GET    | /containers/containerid/elements |               | http://loc8r/api/containers/123/elements
 создание нового элемнта         | POST   | /containers/containerid/elements |               | http://loc8r/api/containers/123/elements
-обновление конкретного элемента | PUT    | /containers/containerid/elements | elementid     | http://loc8r/api/containers/123/elements/123
+обновление конкретного элемента | POST   | /containers/containerid/elements | elementid     | http://loc8r/api/containers/123/elements/123
 удаление конкретного элемента   | DELETE | /elements                        | elementid     | http://loc8r/api/elements/123
